@@ -65,6 +65,7 @@ export default function ResumePage() {
               </p>
             </div>
             <div className="text-xs text-slate-400 print:text-slate-600 flex flex-col sm:items-end gap-1 font-mono">
+              <span className="text-emerald-400 font-semibold print:text-black">Email: {siteConfig.email}</span>
               <span>Location: {siteConfig.location}</span>
               <span>LinkedIn: {siteConfig.social.linkedin.handle}</span>
               <span>Portfolio: {siteConfig.siteUrl.replace("https://", "")}</span>

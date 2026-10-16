@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { researchPapers } from "@/data/research";
+import { researchPapers, researchPortfolioNote } from "@/data/research";
 import {
   TrendingUp,
   BookOpen,
@@ -10,6 +10,7 @@ import {
   ArrowUpRight,
   Quote,
   FileText,
+  Award,
 } from "lucide-react";
 import type { Metadata } from "next";
 
@@ -35,12 +36,22 @@ export default function FinanceAndResearchPage() {
           Grounded quantitative studies and conceptual frameworks exploring transactional fraud vulnerabilities, behavioral consumer heuristics, and go-to-market dynamics in emerging retail ecosystems.
         </p>
 
-        {/* Academic Integrity Notice */}
-        <div className="mt-6 p-4 rounded-2xl bg-slate-900/80 border border-slate-800 flex items-start gap-3 text-xs text-slate-400">
-          <ShieldCheck className="w-4 h-4 text-sky-400 shrink-0 mt-0.5" />
-          <span>
-            All items below reflect working papers, field research drafts, and empirical monographs. Research statuses are explicitly preserved to distinguish active working drafts from peer-reviewed publications.
-          </span>
+        {/* 40+ Journal Publications Portfolio Highlight */}
+        <div className="mt-6 p-5 rounded-2xl bg-gradient-to-r from-amber-950/40 via-slate-900/80 to-sky-950/30 border border-amber-500/40 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div className="flex items-start gap-3">
+            <Award className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
+            <div>
+              <div className="flex items-center gap-2">
+                <span className="text-sm font-bold text-white">40+ Academic Journal Articles Authored & Ghostwritten</span>
+                <span className="text-[11px] font-mono text-amber-300 bg-amber-950/80 border border-amber-700/60 px-2 py-0.5 rounded-full font-semibold">
+                  Published Output
+                </span>
+              </div>
+              <p className="text-xs text-slate-300 mt-1 leading-relaxed">
+                Authored and ghostwritten 40+ research journal publications in collaboration with university professors and academic scholars across management, finance, computer science, and corporate governance. Includes flagship review: <em>Fraud Risk Management: A Theoretical and Governance Review</em> published in <strong>IJARESM</strong>.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 

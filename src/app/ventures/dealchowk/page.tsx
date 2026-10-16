@@ -152,6 +152,29 @@ export default function DealChowkPage() {
             <p>
               Traditional SaaS onboarding paradigms fail in informal and semi-formal retail markets. Our field strategy relies on structured geographic clustering—onboarding high-density commercial markets (chowks and shopping complexes) market-by-market.
             </p>
+
+            {/* Fieldwork Photo Feature */}
+            <div className="my-6 rounded-2xl overflow-hidden bg-slate-900 border border-slate-800 shadow-xl">
+              <div className="relative aspect-[16/10] w-full">
+                <Image
+                  src="/images/dealchowk_field_onboarding.jpg"
+                  alt="Sushil Kumar with local merchant at DealChowk storefront onboarding stall, reviewing mobile app on phone, laptop catalog, and merchant needs checklist"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 750px"
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-4 bg-slate-950 border-t border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs">
+                <div>
+                  <strong className="text-white block">Fieldwork & Live Merchant Onboarding</strong>
+                  <span className="text-slate-400">Sushil Kumar demonstrating live catalog upload and discount validation to a neighborhood retailer.</span>
+                </div>
+                <span className="text-[11px] font-mono text-emerald-400 bg-emerald-950/60 border border-emerald-800/60 px-2.5 py-1 rounded-full shrink-0">
+                  Verified Fieldwork
+                </span>
+              </div>
+            </div>
+
             <ul className="mt-4 flex flex-col gap-2.5 text-xs sm:text-sm text-slate-300">
               <li className="flex items-start gap-2">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400 mt-1 shrink-0" />
@@ -168,15 +191,77 @@ export default function DealChowkPage() {
             </ul>
           </section>
 
-          {/* Section 4: Architectural Integrity & Security */}
+          {/* Section 4: Architectural Integrity & Codebase Distribution */}
           <section>
             <h2 className="text-2xl font-bold text-white tracking-tight mb-4 flex items-center gap-2">
               <Cpu className="w-5 h-5 text-indigo-400" />
-              <span>4. High-Level Architecture & Governance</span>
+              <span>4. Technical Stack & Repository Breakdown</span>
             </h2>
             <p>
-              The platform is architected with clear boundaries separating public catalog discovery from transactional state machines. Geohash-based spatial indexing ensures sub-second query latency for mobile users searching offers within 1km to 10km radii.
+              The DealChowk platform (CityConnect) is engineered with a high-performance cross-platform mobile client and cloud backend. Dart and Flutter power 66.6% of the codebase, ensuring smooth 60fps animations and native device access across Android and iOS.
             </p>
+
+            {/* Codebase Language Breakdown Card */}
+            <div className="my-6 p-6 rounded-2xl bg-slate-900/80 border border-slate-800">
+              <div className="flex items-center justify-between mb-4">
+                <span className="text-xs font-mono uppercase tracking-wider text-sky-400 font-semibold">
+                  Verified GitHub Codebase (ersushilkumar/cityconnect)
+                </span>
+                <a
+                  href="https://github.com/ersushilkumar/cityconnect"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-xs text-sky-400 hover:text-sky-300 font-mono"
+                >
+                  <span>View Repository</span>
+                  <ExternalLink className="w-3 h-3" />
+                </a>
+              </div>
+
+              {/* Stack Visual Bar */}
+              <div className="w-full h-3 rounded-full overflow-hidden flex bg-slate-800 mb-4">
+                <div style={{ width: "66.6%" }} className="bg-sky-500" title="Dart 66.6%" />
+                <div style={{ width: "27.4%" }} className="bg-blue-600" title="TypeScript 27.4%" />
+                <div style={{ width: "1.5%" }} className="bg-orange-500" title="HTML 1.5%" />
+                <div style={{ width: "1.5%" }} className="bg-yellow-400" title="JavaScript 1.5%" />
+                <div style={{ width: "0.9%" }} className="bg-pink-500" title="C++ 0.9%" />
+                <div style={{ width: "0.8%" }} className="bg-blue-400" title="PowerShell 0.8%" />
+                <div style={{ width: "1.3%" }} className="bg-emerald-400" title="Other 1.3%" />
+              </div>
+
+              {/* Language Tags Grid */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs font-mono">
+                <div className="p-2.5 rounded-xl bg-slate-950 border border-slate-800 flex items-center justify-between">
+                  <span className="flex items-center gap-1.5 text-slate-300">
+                    <span className="w-2.5 h-2.5 rounded-full bg-sky-500" />
+                    <span>Dart (Flutter)</span>
+                  </span>
+                  <span className="font-bold text-white">66.6%</span>
+                </div>
+                <div className="p-2.5 rounded-xl bg-slate-950 border border-slate-800 flex items-center justify-between">
+                  <span className="flex items-center gap-1.5 text-slate-300">
+                    <span className="w-2.5 h-2.5 rounded-full bg-blue-600" />
+                    <span>TypeScript</span>
+                  </span>
+                  <span className="font-bold text-white">27.4%</span>
+                </div>
+                <div className="p-2.5 rounded-xl bg-slate-950 border border-slate-800 flex items-center justify-between">
+                  <span className="flex items-center gap-1.5 text-slate-300">
+                    <span className="w-2.5 h-2.5 rounded-full bg-orange-500" />
+                    <span>HTML / JS</span>
+                  </span>
+                  <span className="font-bold text-white">3.0%</span>
+                </div>
+                <div className="p-2.5 rounded-xl bg-slate-950 border border-slate-800 flex items-center justify-between">
+                  <span className="flex items-center gap-1.5 text-slate-300">
+                    <span className="w-2.5 h-2.5 rounded-full bg-emerald-400" />
+                    <span>Firebase & Other</span>
+                  </span>
+                  <span className="font-bold text-white">3.0%</span>
+                </div>
+              </div>
+            </div>
+
             <p className="mt-3">
               Crucially, financial and promotional state engines incorporate fraud risk rules—preventing fake redemption claims, repeated promotional exploits, and phantom merchant profiles through multi-factor validation and transaction audit trails.
             </p>

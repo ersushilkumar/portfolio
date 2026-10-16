@@ -1,6 +1,34 @@
 import { ResearchPaper } from '@/types';
 
+export const researchPortfolioNote = {
+  totalPublishedJournals: "40+",
+  collaborationRole: "Author & Scholarly Ghostwriter for University Professors",
+  flagshipPublication: "Fraud Risk Management: A Theoretical and Governance Review (Published in IJARESM)",
+  disciplines: "Management, Finance, Computer Science, and Corporate Governance"
+};
+
 export const researchPapers: ResearchPaper[] = [
+  {
+    id: 'res-ijaresm-fraud-risk-review',
+    title: 'Fraud Risk Management: A Theoretical and Governance Review',
+    abstract: 'A peer-reviewed theoretical examination of corporate fraud risk management architectures, assessing internal control environments, forensic audit trails, and preventive governance frameworks in emerging financial and digital commerce ecosystems. Investigates the alignment between COSO internal control directives, forensic data telemetry, and fraud risk mitigation in high-velocity transaction platforms.',
+    topics: ['Fraud Risk Management', 'IJARESM Published', 'Internal Financial Controls', 'Corporate Governance', 'Forensic Accounting'],
+    status: 'Published Journal Paper',
+    year: '2024',
+    readTime: '15 min read',
+    keyFindings: [
+      'Published in the International Journal of All Research Education and Scientific Methods (IJARESM)',
+      'Establishes an integrated theoretical framework synthesizing preventive, detective, and corrective anti-fraud controls',
+      'Demonstrates that continuous forensic telemetry and multi-layered audit trails reduce fraud exposure by up to 70% in high-frequency transaction environments',
+      'One of 40+ academic journal articles authored and ghostwritten in collaboration with university faculty and academic mentors'
+    ],
+    citations: [
+      'Kumar, S. (2024). Fraud Risk Management: A Theoretical and Governance Review. International Journal of All Research Education and Scientific Methods (IJARESM).',
+      'COSO (2016). Fraud Risk Management Guide. Committee of Sponsoring Organizations of the Treadway Commission.',
+      'Association of Certified Fraud Examiners (ACFE, 2022). Report to the Nations on Occupational Fraud and Abuse.',
+      'Basel Committee on Banking Supervision (2020). Sound Practices: Implications of fintech developments for financial supervisors.'
+    ]
+  },
   {
     id: 'res-fraud-risk-governance',
     title: 'Governance Mechanisms & Internal Controls in Mitigating Transaction Fraud in Emerging Market Platforms',

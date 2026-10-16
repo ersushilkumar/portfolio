@@ -100,12 +100,12 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Outdoor Journey Photograph */}
+          {/* Outdoor Groundwork & Merchant Onboarding Photograph */}
           <div className="rounded-3xl overflow-hidden bg-slate-900 border border-slate-800 shadow-xl relative group">
             <div className="relative aspect-[16/10] w-full">
               <Image
                 src={siteConfig.images.outdoorJourney}
-                alt="Sushil Kumar — Real outdoor field environment photograph"
+                alt="Sushil Kumar with local merchant at DealChowk storefront counter reviewing mobile app, laptop catalog, and onboarding checklist"
                 fill
                 sizes="(max-width: 1024px) 100vw, 450px"
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -114,10 +114,10 @@ export default function AboutPage() {
             </div>
             <div className="p-4 bg-slate-950 border-t border-slate-800/80">
               <span className="text-xs font-semibold text-white block">
-                Fieldwork & Ground Realities
+                Ground Reality & Retailer Onboarding
               </span>
               <span className="text-[11px] text-slate-400">
-                Understanding regional merchant operations and local consumer dynamics firsthand.
+                Sushil Kumar on the ground with local Kirana and retail merchants—verifying real-time mobile workflows, QR voucher redemption, and inventory needs.
               </span>
             </div>
           </div>

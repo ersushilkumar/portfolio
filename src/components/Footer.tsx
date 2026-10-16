@@ -52,7 +52,14 @@ export default function Footer() {
                 <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
                 Verified Public Profiles
               </span>
-              <div className="flex flex-wrap items-center gap-3">
+              <div className="flex flex-wrap items-center gap-2.5">
+                <a
+                  href={`mailto:${siteConfig.email}`}
+                  className="inline-flex items-center gap-1.5 text-xs text-emerald-400 hover:text-emerald-300 transition-colors bg-emerald-950/40 border border-emerald-800/40 px-2.5 py-1 rounded-md"
+                >
+                  <Mail className="w-3 h-3" />
+                  <span>{siteConfig.email}</span>
+                </a>
                 <a
                   href={siteConfig.social.linkedin.url}
                   target="_blank"

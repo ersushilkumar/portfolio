@@ -5,20 +5,21 @@ export const siteConfig = {
   headline: "Architecting Hyperlocal Commerce, Scalable Platforms & Management Strategies",
   tagline: "Bridging physical retail and digital velocity through thoughtful product architecture, consumer psychology, and quantitative business strategy.",
   location: "India",
+  email: "sushilkumardugul@gmail.com",
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://sushilkumar.dev",
-  ogImage: "/images/linkedin_profile_executive_navy.jpg",
+  ogImage: "/images/sushil_executive_overview.jpg",
   
   images: {
-    heroNavy: "/images/linkedin_profile_executive_navy.jpg",
+    heroNavy: "/images/sushil_executive_overview.jpg",
     heroPoised: "/images/linkedin_profile_executive_navy_poised.jpg",
     charcoalBlazer: "/images/linkedin_profile_modern_charcoal.jpg",
-    outdoorJourney: "/images/IMG_28281.JPG",
+    outdoorJourney: "/images/dealchowk_field_onboarding.jpg",
     dealchowkLogo: "/images/dealchowk_official_logo.png",
   },
 
   bio: {
-    short: "Founder of DealChowk, builder of tech ventures, and researcher in management, finance, fraud risk mitigation, and consumer behavior.",
-    full: "I am an entrepreneurial builder and researcher focused on the intersection of local commerce systems, financial risk governance, and digital product strategy. As the founder of DealChowk, I lead the development of a hyperlocal marketplace connecting neighborhood merchants with nearby consumers. Alongside venture building, I investigate marketing models, consumer behavior, and financial fraud risk frameworks.",
+    short: "Founder of DealChowk, builder of tech ventures, MBA scholar in Finance & Marketing (AKNU), B.Tech CSE (Aditya University), with experience at KreditBee, ICCS (Dream11), and author of 40+ academic journal papers.",
+    full: "I am an entrepreneurial builder, product architect, and management researcher. I hold a B.Tech in Computer Science & Engineering from Aditya University (2019–2023) and am pursuing an MBA in Finance & Marketing at Adikavi Nannaya University (AKNU MSN PG Center Kakinada, 2025–2027). My professional experience spans marketing at KreditBee, customer process operations for Dream11 at ICCS, founding DealChowk (cross-platform hyperlocal commerce built with Flutter, Dart, TypeScript, and Firebase), and publishing 40+ academic journal papers in collaboration with university faculty.",
     values: [
       {
         title: "Grounded Value Creation",

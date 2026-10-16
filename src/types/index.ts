@@ -11,7 +11,7 @@ export interface Venture {
   title: string;
   tagline: string;
   category: string;
-  status: 'Active Venture' | 'In Development' | 'Strategic Initiative';
+  status: 'Active Venture' | 'In Development' | 'Strategic Initiative' | 'Case Study / Research Initiative';
   period: string;
   role: string;
   description: string;
@@ -34,8 +34,8 @@ export interface Project {
   slug: string;
   title: string;
   tagline: string;
-  category: 'Platform' | 'Fintech & Risk' | 'AI & Analytics' | 'Hardware/Operations';
-  status: 'Shipped' | 'In Progress' | 'Research Prototype';
+  category: 'Platform' | 'Mobile & Platform' | 'Web Application' | 'Fintech & Risk' | 'AI & Analytics' | 'Hardware/Operations';
+  status: 'Shipped' | 'In Progress' | 'Research Prototype' | 'In Development / Launching Soon';
   period: string;
   description: string;
   problem: string;
@@ -53,7 +53,8 @@ export interface ResearchPaper {
   title: string;
   abstract: string;
   topics: string[];
-  status: 'Working Paper' | 'Conference Presentation' | 'Research Draft' | 'Monograph';
+  status: 'Published Journal Paper' | 'Working Paper' | 'Conference Presentation' | 'Research Draft' | 'Monograph';
+  journal?: string;
   year: string;
   citations: string[];
   keyFindings: string[];

@@ -3,27 +3,55 @@ import { Project } from '@/types';
 export const projects: Project[] = [
   {
     slug: 'dealchowk-merchant-console',
-    title: 'DealChowk Merchant Console & POS Verification',
-    tagline: 'Lightweight order, catalog, and QR verification application for local retail counters',
-    category: 'Platform',
+    title: 'DealChowk Mobile & Merchant Platform (CityConnect)',
+    tagline: 'Cross-platform mobile application and merchant discovery system connecting offline retailers with nearby shoppers',
+    category: 'Mobile & Platform',
     status: 'Shipped',
     period: '2024',
-    description: 'Designed and built an ultra-lightweight mobile & desktop merchant dashboard allowing store owners to broadcast live deals, manage catalog items, and verify customer voucher OTPs in under 5 seconds.',
+    description: 'Designed and built the core CityConnect mobile application and merchant console for DealChowk. Built as a high-performance cross-platform application allowing store owners to broadcast live deals, manage catalog items, and verify customer voucher OTPs in under 5 seconds.',
     problem: 'Traditional retail POS systems and e-commerce dashboards are overburdened with enterprise complexity, making onboarding painfully slow for non-technical retail counter staff.',
-    solution: 'Engineered a streamlined, high-contrast PWA interface optimized for high-glare store conditions, featuring one-tap deal toggling and instantaneous QR coupon redemptions.',
+    solution: 'Engineered a unified cross-platform mobile and web application with Flutter, Dart, TypeScript, and Firebase featuring sub-250ms proximity discovery, one-tap deal toggling, and instantaneous QR coupon redemptions.',
     approach: [
-      'Field interviews with local Kirana and electronics shop owners in regional retail hubs',
-      'Developed high-contrast visual tokens based on user research in bright outdoor shopfronts',
+      'Engineered cross-platform mobile application in Flutter with Dart representing 66.6% of the codebase',
+      'Developed cloud services and state management with TypeScript (27.4%) and Firebase',
+      'Integrated native optimizations with C++ (0.9%), HTML (1.5%), JavaScript (1.5%), and deployment automation via Shell/PowerShell',
       'Implemented optimistic UI updates to ensure instant feedback even on intermittent 4G connections',
       'Engineered two-factor OTP and QR validation to eradicate duplicate voucher redemptions'
     ],
     outcomes: [
       'Voucher validation time reduced to under 5 seconds at the cash counter',
       'Zero training required for merchants to publish their first daily deal',
-      'High operational reliability observed across pilot merchant testbeds'
+      'High operational reliability observed across pilot merchant testbeds',
+      'Open-source repository verified: ersushilkumar/cityconnect'
     ],
-    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'PWA', 'Web Workers', 'Lucide Icons'],
+    technologies: ['Flutter', 'Dart (66.6%)', 'TypeScript (27.4%)', 'Firebase', 'Shell', 'C++', 'HTML/JS', 'PowerShell'],
     liveUrl: 'https://app.dealchowk.in/',
+    githubUrl: 'https://github.com/ersushilkumar/cityconnect',
+    featured: true
+  },
+  {
+    slug: 'ai-resume-builder',
+    title: 'Dynamic AI Resume Builder Web Application',
+    tagline: 'ATS-optimized professional resume generator with live interactive preview, modular styling, and PDF compilation',
+    category: 'Web Application',
+    status: 'In Development / Launching Soon',
+    period: '2025',
+    description: 'An interactive, modern resume builder web application designed for students, developers, and corporate professionals to generate ATS-compliant, beautifully styled resumes with real-time editing, modular templates, and instant PDF compilation. Hosted on Vercel.',
+    problem: 'Job seekers struggle with subscription paywalls, broken layout formatting on PDF export, and non-ATS compliant designs that fail recruitment filters.',
+    solution: 'Engineered an intuitive single-page resume studio supporting real-time typography customization, ATS score verification, modular section drag-and-drop, and clean one-click PDF generation.',
+    approach: [
+      'Modular React component architecture for live form-to-preview synchronization with zero lag',
+      'Client-side PDF compilation eliminating server latency and maintaining complete user privacy',
+      'Pre-calibrated typography and spacing tokens complying with international ATS scanning standards',
+      'Continuous deployment pipeline configured for high-availability Vercel edge hosting'
+    ],
+    outcomes: [
+      'Instant real-time resume rendering with sub-100ms preview updates',
+      'Single-click export to high-resolution print-standard PDF',
+      'Vercel deployment launching soon — link to be updated upon live cutover'
+    ],
+    technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Vercel', 'PDF Generation Engine'],
+    liveUrl: 'https://resumebuilder-sushilkumar.vercel.app',
     featured: true
   },
   {

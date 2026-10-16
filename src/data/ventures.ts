@@ -8,21 +8,24 @@ export const ventures: Venture[] = [
     category: 'Hyperlocal Marketplace & Merchant OS',
     status: 'Active Venture',
     period: '2024 — Present',
-    role: 'Founder & Product Architect',
-    description: 'DealChowk is a dual-sided hyperlocal commerce ecosystem engineered to solve the acute visibility and footfall challenges faced by offline neighborhood retailers. Through proximity-based deal discovery, instant digital vouchers, and a lightweight merchant console, DealChowk bridges high-street physical retail with digital consumer habits.',
+    role: 'Founder & Product Lead',
+    description: 'DealChowk is a dual-sided hyperlocal commerce ecosystem engineered to solve the acute visibility and footfall challenges faced by offline neighborhood retailers. Powered by Flutter, Dart, TypeScript, and Firebase, DealChowk connects high-street physical retail with digital consumer habits through proximity-based discovery, instant digital vouchers, and a lightweight merchant console.',
     keyHighlights: [
+      'Engineered cross-platform mobile architecture with Flutter & Dart (66.6% codebase) and TypeScript (27.4%)',
       'Proximity-based discovery engine surfacing active retail promotions within 500m to 5km radius',
       'Dual-interface architecture: high-conversion shopper feed and lightweight merchant management console',
       'Frictionless digital coupon validation system with QR and OTP authentication preventing redemption fraud',
       'Low-barrier merchant onboarding requiring zero technical complexity or expensive POS hardware'
     ],
     metrics: [
+      { label: 'Core Language', value: 'Dart (66.6%)', verified: true },
+      { label: 'Cloud Services', value: 'TypeScript (27.4%)', verified: true },
       { label: 'Discovery Latency', value: '< 250ms', verified: true },
       { label: 'Target Proximity', value: '500m — 5km', verified: true },
       { label: 'Merchant Onboarding', value: '< 3 mins', verified: true },
-      { label: 'Architecture', value: 'Cloud-Native Dual PWA', verified: true }
+      { label: 'Backend Stack', value: 'Firebase & Cloud', verified: true }
     ],
-    technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Geospatial Indexing', 'PWA', 'REST APIs'],
+    technologies: ['Flutter', 'Dart (66.6%)', 'TypeScript (27.4%)', 'Firebase', 'Shell', 'C++', 'HTML/CSS', 'PowerShell', 'Geospatial Indexing'],
     publicUrl: 'https://dealchowk.in/',
     appUrl: 'https://app.dealchowk.in/',
     logoUrl: '/images/dealchowk_official_logo.png',
@@ -64,12 +67,12 @@ export const ventures: Venture[] = [
   {
     slug: 'skillpehill',
     title: 'SkillPeHill',
-    tagline: 'Skill Verification, Career Assessment & Regional Talent Intelligence Ecosystem',
-    category: 'EdTech & Workforce Infrastructure',
-    status: 'Strategic Initiative',
-    period: '2024 — Present',
+    tagline: 'Case Study: Skill Verification, Career Assessment & Regional Workforce Ecosystem',
+    category: 'EdTech & Workforce Case Study',
+    status: 'Case Study / Research Initiative',
+    period: '2024 (Archived Case Study)',
     role: 'Initiative Lead & Systems Architect',
-    description: 'SkillPeHill (integrated within the KEGYA unified skill infrastructure) addresses employability mismatches by providing objective, benchmarked skill assessments and verified micro-credentials for aspiring professionals in tier-2 and tier-3 regions.',
+    description: 'SkillPeHill is an archived strategic case study and research framework investigating objective competency assessments, tamper-resistant skill badges, and workforce readiness for tier-2/3 student populations.',
     keyHighlights: [
       'Standardized skill assessment matrices calibrated against industry hiring benchmarks',
       'Tamper-resistant digital skill badges facilitating verifiable talent discovery for recruiters',
@@ -77,10 +80,11 @@ export const ventures: Venture[] = [
       'Accessible, mobile-first student portal designed for low-bandwidth rural and semi-urban connectivity'
     ],
     metrics: [
+      { label: 'Status', value: 'Archived Case Study', verified: true },
       { label: 'Assessment Paradigm', value: 'Competency-Based', verified: true },
       { label: 'Accessibility Target', value: 'Low-Bandwidth Optimized', verified: true }
     ],
-    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Assessment Engines', 'Micro-credentials'],
+    technologies: ['Case Study', 'Next.js', 'TypeScript', 'Assessment Engines', 'Micro-credentials'],
     colorTheme: {
       primary: '#10B981',
       accent: '#059669',

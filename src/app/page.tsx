@@ -20,6 +20,7 @@ import {
   Layers,
   CheckCircle,
   ExternalLink,
+  Mail,
 } from "lucide-react";
 
 export default function HomePage() {
@@ -99,6 +100,13 @@ export default function HomePage() {
                 <BookOpen className="w-4 h-4 text-amber-400" />
                 <span>Academic Publishing</span>
               </Link>
+              <a
+                href={`mailto:${siteConfig.email}`}
+                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-emerald-950/60 hover:bg-emerald-900/60 border border-emerald-600/50 hover:border-emerald-400 text-emerald-300 hover:text-white font-medium text-xs transition-colors"
+              >
+                <Mail className="w-3.5 h-3.5 text-emerald-400" />
+                <span>Email Sushil</span>
+              </a>
               <a
                 href={siteConfig.social.linkedin.url}
                 target="_blank"

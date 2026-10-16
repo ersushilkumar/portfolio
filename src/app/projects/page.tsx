@@ -17,7 +17,14 @@ import {
 export default function ProjectsPage() {
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
 
-  const categories = ["All", "Platform", "Fintech & Risk", "AI & Analytics"];
+  const categories = [
+    "All",
+    "Mobile & Platform",
+    "Web Application",
+    "Platform",
+    "Fintech & Risk",
+    "AI & Analytics",
+  ];
 
   const filteredProjects =
     selectedCategory === "All"

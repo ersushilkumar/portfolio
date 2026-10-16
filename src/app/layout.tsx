@@ -75,6 +75,15 @@ export const metadata: Metadata = {
   alternates: {
     canonical: siteConfig.siteUrl,
   },
+  icons: {
+    icon: [
+      { url: "/icon.png", type: "image/png" },
+      { url: "/favicon.ico" },
+    ],
+    apple: [
+      { url: "/apple-icon.png", type: "image/png" },
+    ],
+  },
 };
 
 export const viewport: Viewport = {

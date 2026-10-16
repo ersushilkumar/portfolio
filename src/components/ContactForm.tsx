@@ -36,7 +36,7 @@ export default function ContactForm() {
   };
 
   const generateMailtoUrl = () => {
-    const recipient = "sushil.dealchowk@gmail.com"; // Verified primary founder email placeholder
+    const recipient = siteConfig.email || "sushilkumardugul@gmail.com";
     const subject = encodeURIComponent(
       `[Portfolio Inquiry - ${formData.category}] ${formData.subject}`
     );
@@ -51,7 +51,7 @@ export default function ContactForm() {
 
   const handleCopyFormatted = () => {
     const formatted =
-      `To: Sushil Kumar\n` +
+      `To: Sushil Kumar (${siteConfig.email})\n` +
       `Category: ${formData.category}\n` +
       `Subject: ${formData.subject}\n` +
       `Sender: ${formData.name} (${formData.email})\n\n` +
@@ -96,11 +96,15 @@ export default function ContactForm() {
     <div className="w-full max-w-2xl mx-auto rounded-3xl bg-slate-900/80 border border-slate-800 p-6 sm:p-10 shadow-2xl backdrop-blur-md">
       {/* Header Info */}
       <div className="mb-8">
+        <div className="inline-flex items-center gap-2 bg-emerald-950/60 border border-emerald-600/50 px-3 py-1 rounded-full text-xs font-semibold text-emerald-300 mb-3">
+          <Mail className="w-3.5 h-3.5 text-emerald-400" />
+          <span>Verified Direct Inbox: {siteConfig.email}</span>
+        </div>
         <h3 className="text-2xl font-bold text-white tracking-tight">
           Send a Direct Inquiry
         </h3>
         <p className="text-xs sm:text-sm text-slate-400 mt-2 leading-relaxed">
-          For platform collaborations, research inquiries, manuscript editing, or advisory conversations. All inquiries route directly to Sushil Kumar.
+          For platform collaborations, research inquiries, manuscript editing, or advisory conversations. All inquiries route directly to Sushil Kumar at <strong className="text-slate-200">{siteConfig.email}</strong>.
         </p>
       </div>
 

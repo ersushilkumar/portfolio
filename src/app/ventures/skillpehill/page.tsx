@@ -31,8 +31,8 @@ export default function SkillPeHillPage() {
       {/* Hero Banner */}
       <div className="rounded-3xl bg-gradient-to-br from-indigo-950/40 via-slate-900/90 to-slate-950 border border-indigo-500/30 p-8 sm:p-12 mb-16 shadow-2xl">
         <div className="flex items-center gap-3 mb-3">
-          <span className="text-xs font-mono font-semibold text-indigo-300 bg-indigo-950/60 border border-indigo-800/60 px-3 py-0.5 rounded-full">
-            {venture.status}
+          <span className="text-xs font-mono font-semibold text-amber-300 bg-amber-950/60 border border-amber-800/60 px-3 py-0.5 rounded-full">
+            Archived Case Study & Research Framework
           </span>
           <span className="text-xs text-slate-400 font-mono">
             {venture.period}
@@ -44,6 +44,12 @@ export default function SkillPeHillPage() {
         <p className="mt-3 text-base sm:text-lg text-indigo-200/90 font-medium max-w-2xl">
           {venture.tagline}
         </p>
+
+        {/* Case Study Notice */}
+        <div className="mt-6 p-4 rounded-2xl bg-slate-950/70 border border-slate-800 text-xs text-slate-300 leading-relaxed max-w-3xl">
+          <strong className="text-amber-400 block mb-1">Status: Archived Initiative & Academic Case Study</strong>
+          SkillPeHill is currently inactive as a commercial venture. It is preserved here as a comprehensive case study documenting our research into competency-based vocational assessment, tamper-resistant skill badges, and accessible low-bandwidth architectures for regional talent.
+        </div>
       </div>
 
       {/* Main Content Grid */}
