@@ -264,20 +264,6 @@ export default function Footer() {
             <Link href="/privacy" className="hover:text-slate-300 transition-colors">
               Data Privacy & Disclaimers
             </Link>
-            <span className="text-slate-700">|</span>
-            <a
-              href="/sitemap.xml"
-              className="hover:text-slate-300 transition-colors"
-            >
-              XML Sitemap
-            </a>
-            <span className="text-slate-700">|</span>
-            <a
-              href="/llms.txt"
-              className="hover:text-slate-300 transition-colors"
-            >
-              llms.txt
-            </a>
           </div>
         </div>
       </div>

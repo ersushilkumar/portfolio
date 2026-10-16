@@ -36,7 +36,7 @@ export default function ContactForm() {
   };
 
   const generateMailtoUrl = () => {
-    const recipient = siteConfig.email || "sushilkumardugul@gmail.com";
+    const recipient = siteConfig.email || "sushil.dealchowk@gmail.com";
     const subject = encodeURIComponent(
       `[Portfolio Inquiry - ${formData.category}] ${formData.subject}`
     );

@@ -5,7 +5,7 @@ export const siteConfig = {
   headline: "Architecting Hyperlocal Commerce, Scalable Platforms & Management Strategies",
   tagline: "Bridging physical retail and digital velocity through thoughtful product architecture, consumer psychology, and quantitative business strategy.",
   location: "India",
-  email: "sushilkumardugul@gmail.com",
+  email: "sushil.dealchowk@gmail.com",
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://sushilkumar.dev",
   ogImage: "/images/sushil_executive_overview.jpg",
   
