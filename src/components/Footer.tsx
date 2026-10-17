@@ -1,8 +1,5 @@
-"use client";
-
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { siteConfig } from "@/data/siteConfig";
 import {
   ExternalLink,
@@ -12,7 +9,6 @@ import {
   ArrowUpRight,
   FileText,
   Mail,
-  MapPin,
   Lock,
 } from "lucide-react";
 
@@ -91,13 +87,13 @@ export default function Footer() {
             <p className="text-[11px] text-slate-400 leading-normal">
               Hyperlocal commerce platform connecting neighborhood stores with local buyers.
             </p>
-            <ul className="flex flex-col gap-1.5 text-xs">
+            <ul className="flex flex-col gap-1 text-xs">
               <li>
                 <a
                   href={siteConfig.dealchowkSocial.website.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-rose-400 transition-colors inline-flex items-center gap-1"
+                  className="hover:text-rose-400 transition-colors inline-flex items-center gap-1 py-1"
                 >
                   <span>Public Portal (dealchowk.in)</span>
                   <ArrowUpRight className="w-3 h-3 text-slate-400" />
@@ -108,7 +104,7 @@ export default function Footer() {
                   href={siteConfig.dealchowkSocial.app.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-rose-400 transition-colors inline-flex items-center gap-1"
+                  className="hover:text-rose-400 transition-colors inline-flex items-center gap-1 py-1"
                 >
                   <span>Live Web App (app.dealchowk.in)</span>
                   <ArrowUpRight className="w-3 h-3 text-slate-400" />
@@ -119,7 +115,7 @@ export default function Footer() {
                   href={siteConfig.dealchowkSocial.youtube.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-rose-400 transition-colors inline-flex items-center gap-1"
+                  className="hover:text-rose-400 transition-colors inline-flex items-center gap-1 py-1"
                 >
                   <span>Official YouTube</span>
                   <ExternalLink className="w-3 h-3 text-slate-400" />
@@ -130,7 +126,7 @@ export default function Footer() {
                   href={siteConfig.dealchowkSocial.instagram.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-rose-400 transition-colors inline-flex items-center gap-1"
+                  className="hover:text-rose-400 transition-colors inline-flex items-center gap-1 py-1"
                 >
                   <span>Official Instagram</span>
                   <ExternalLink className="w-3 h-3 text-slate-400" />
@@ -141,7 +137,7 @@ export default function Footer() {
                   href={siteConfig.dealchowkSocial.facebook.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-rose-400 transition-colors inline-flex items-center gap-1"
+                  className="hover:text-rose-400 transition-colors inline-flex items-center gap-1 py-1"
                 >
                   <span>DealChowk Facebook</span>
                   <ExternalLink className="w-3 h-3 text-slate-400" />
@@ -159,11 +155,11 @@ export default function Footer() {
             <p className="text-[11px] text-slate-400 leading-normal">
               Scholarly workflows, preprints, journal tracks, and manuscript editorial services.
             </p>
-            <ul className="flex flex-col gap-1.5 text-xs">
+            <ul className="flex flex-col gap-1 text-xs">
               <li>
                 <Link
                   href="/research-publishing"
-                  className="text-amber-300 hover:text-amber-200 transition-colors inline-flex items-center gap-1"
+                  className="text-amber-300 hover:text-amber-200 transition-colors inline-flex items-center gap-1 py-1"
                 >
                   <span>Platform Overview & Rates</span>
                   <span className="w-1.5 h-1.5 rounded-full bg-amber-400" />
@@ -172,7 +168,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/research-publishing/repository"
-                  className="hover:text-white transition-colors"
+                  className="hover:text-white transition-colors inline-block py-1"
                 >
                   Academic Repository (Free Deposit)
                 </Link>
@@ -180,7 +176,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/research-publishing/journals"
-                  className="hover:text-white transition-colors"
+                  className="hover:text-white transition-colors inline-block py-1"
                 >
                   Journal Tracks & Peer Review
                 </Link>
@@ -188,7 +184,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/research-publishing/services"
-                  className="hover:text-white transition-colors"
+                  className="hover:text-white transition-colors inline-block py-1"
                 >
                   Author Services (Editing & Formatting)
                 </Link>
@@ -196,7 +192,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/finance-and-research"
-                  className="hover:text-white transition-colors"
+                  className="hover:text-white transition-colors inline-block py-1"
                 >
                   Management & Risk Research
                 </Link>
@@ -210,39 +206,39 @@ export default function Footer() {
               <FileText className="w-4 h-4 text-sky-400" />
               <span>Site Navigation</span>
             </div>
-            <ul className="flex flex-col gap-1.5 text-xs">
+            <ul className="flex flex-col gap-1 text-xs">
               <li>
-                <Link href="/about" className="hover:text-white transition-colors">
+                <Link href="/about" className="hover:text-white transition-colors inline-block py-1">
                   About & Background
                 </Link>
               </li>
               <li>
-                <Link href="/ventures" className="hover:text-white transition-colors">
+                <Link href="/ventures" className="hover:text-white transition-colors inline-block py-1">
                   Ventures (DealChowk, Siddhi, SkillPeHill)
                 </Link>
               </li>
               <li>
-                <Link href="/projects" className="hover:text-white transition-colors">
+                <Link href="/projects" className="hover:text-white transition-colors inline-block py-1">
                   Product & Engineering Projects
                 </Link>
               </li>
               <li>
-                <Link href="/writing" className="hover:text-white transition-colors">
+                <Link href="/writing" className="hover:text-white transition-colors inline-block py-1">
                   Essays & Technical Writing
                 </Link>
               </li>
               <li>
-                <Link href="/resume" className="hover:text-white transition-colors">
+                <Link href="/resume" className="hover:text-white transition-colors inline-block py-1">
                   Structured Resume
                 </Link>
               </li>
               <li>
-                <Link href="/privacy" className="hover:text-white transition-colors">
+                <Link href="/privacy" className="hover:text-white transition-colors inline-block py-1">
                   Privacy Notice & Terms
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-white transition-colors">
+                <Link href="/contact" className="hover:text-white transition-colors inline-block py-1">
                   Direct Inquiries
                 </Link>
               </li>

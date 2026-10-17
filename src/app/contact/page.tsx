@@ -12,9 +12,18 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Sushil Kumar — Inquiries, Ventures & Collaboration",
+  title: "Contact & Collaboration Inquiries",
   description:
     "Direct contact options for Sushil Kumar: venture inquiries for DealChowk, academic collaboration, and manuscript publishing.",
+  alternates: {
+    canonical: "/contact",
+  },
+  openGraph: {
+    title: "Contact Sushil Kumar — Inquiries, Ventures & Collaboration",
+    description:
+      "Direct channels and verified email communication with Sushil Kumar for venture building and academic collaboration.",
+    url: "/contact",
+  },
 };
 
 export default function ContactPage() {

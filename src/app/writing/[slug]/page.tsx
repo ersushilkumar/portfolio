@@ -4,12 +4,10 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { articles } from "@/data/articles";
 import {
-  FileText,
   Calendar,
   Clock,
   ArrowLeft,
   Quote,
-  Share2,
   BookOpen,
 } from "lucide-react";
 import type { Metadata } from "next";
@@ -37,12 +35,16 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${article.title} — Sushil Kumar`,
+    title: article.title,
     description: article.description,
+    alternates: {
+      canonical: `/writing/${slug}`,
+    },
     openGraph: {
       title: article.title,
       description: article.description,
       type: "article",
+      url: `/writing/${slug}`,
       publishedTime: article.publishedAt,
       authors: [article.author.name],
       tags: article.tags,

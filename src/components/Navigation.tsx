@@ -4,12 +4,19 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { siteConfig } from "@/data/siteConfig";
-import { Menu, X, ArrowUpRight, BookOpen, Layers } from "lucide-react";
+import { Menu, X, ArrowUpRight, BookOpen } from "lucide-react";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
+  const [prevPathname, setPrevPathname] = useState(pathname);
+
+  // Synchronously reset drawer when route changes during render (React 19 standard)
+  if (prevPathname !== pathname) {
+    setPrevPathname(pathname);
+    setIsOpen(false);
+  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,11 +25,6 @@ export default function Navigation() {
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  // Close mobile drawer on route change
-  useEffect(() => {
-    setIsOpen(false);
-  }, [pathname]);
 
   return (
     <header
@@ -38,9 +40,12 @@ export default function Navigation() {
           <Link
             href="/"
             className="group flex items-center gap-3 text-slate-100 hover:text-white transition-colors"
-            aria-label="Sushil Kumar — Home"
+            aria-label="Sushil Kumar — Founder & Platform Builder — Home"
           >
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 via-sky-500 to-emerald-500 p-[1px] shadow-md shadow-indigo-500/20 group-hover:scale-105 transition-transform duration-200">
+            <div
+              aria-hidden="true"
+              className="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 via-sky-500 to-emerald-500 p-[1px] shadow-md shadow-indigo-500/20 group-hover:scale-105 transition-transform duration-200"
+            >
               <div className="w-full h-full bg-slate-950 rounded-[11px] flex items-center justify-center font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-indigo-300 text-sm">
                 SK
               </div>

@@ -2,18 +2,20 @@ import React from "react";
 import { siteConfig } from "@/data/siteConfig";
 
 export default function JsonLd() {
+  const baseUrl = siteConfig.siteUrl.replace(/\/$/, "");
+
   const personJsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
     name: siteConfig.name,
     jobTitle: siteConfig.role,
     description: siteConfig.bio.short,
-    url: siteConfig.siteUrl,
-    image: `${siteConfig.siteUrl}${siteConfig.images.heroNavy}`,
+    url: baseUrl,
+    image: `${baseUrl}${siteConfig.images.heroNavy}`,
+    email: `mailto:${siteConfig.email}`,
     sameAs: [
       siteConfig.social.linkedin.url,
       siteConfig.social.github.url,
-      siteConfig.dealchowkSocial.website.url,
     ],
     knowsAbout: [
       "Hyperlocal Commerce",

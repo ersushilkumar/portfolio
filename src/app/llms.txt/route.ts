@@ -1,7 +1,5 @@
 import { NextResponse } from "next/server";
 import { siteConfig } from "@/data/siteConfig";
-import { ventures } from "@/data/ventures";
-import { publishingConfig } from "@/data/publishingConfig";
 
 export async function GET() {
   const content = `# Sushil Kumar — Founder, Product Architect & Researcher
@@ -30,7 +28,7 @@ This portfolio is strictly decoupled from DealChowk commercial production databa
   return new NextResponse(content, {
     status: 200,
     headers: {
-      "Content-Type": "text/plain; charset=utf-8",
+      "Content-Type": "text/markdown; charset=utf-8",
       "Cache-Control": "public, max-age=86400, s-maxage=86400",
     },
   });

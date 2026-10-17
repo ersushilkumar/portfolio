@@ -6,7 +6,11 @@ export const siteConfig = {
   tagline: "Bridging physical retail and digital velocity through thoughtful product architecture, consumer psychology, and quantitative business strategy.",
   location: "India",
   email: "sushil.dealchowk@gmail.com",
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://sushilkumar.dev",
+  siteUrl:
+    process.env.NEXT_PUBLIC_SITE_URL ||
+    (process.env.VERCEL_PROJECT_PRODUCTION_URL
+      ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+      : "https://portfolios-tau-dusky.vercel.app"),
   ogImage: "/images/sushil_executive_overview.jpg",
   
   images: {

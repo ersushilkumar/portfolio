@@ -1,16 +1,11 @@
 "use client";
 
 import React, { useState } from "react";
-import Link from "next/link";
 import { projects } from "@/data/projects";
 import {
   Layers,
-  ArrowUpRight,
   ExternalLink,
   CheckCircle2,
-  Cpu,
-  ShieldAlert,
-  BarChart3,
   Code2,
 } from "lucide-react";
 

@@ -6,15 +6,24 @@ import * as THREE from "three";
 export default function ThreeHeroScene() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [webglSupported, setWebglSupported] = useState(true);
-  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(() => {
+    if (typeof window !== "undefined") {
+      return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    }
+    return false;
+  });
 
   useEffect(() => {
-    // Check prefers-reduced-motion
     const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
-    if (mediaQuery.matches) {
-      setPrefersReducedMotion(true);
-      return;
-    }
+    const handleMotionChange = (e: MediaQueryListEvent) => {
+      setPrefersReducedMotion(e.matches);
+    };
+    mediaQuery.addEventListener("change", handleMotionChange);
+    return () => mediaQuery.removeEventListener("change", handleMotionChange);
+  }, []);
+
+  useEffect(() => {
+    if (prefersReducedMotion) return;
 
     // Check WebGL availability
     const canvas = canvasRef.current;
@@ -167,12 +176,25 @@ export default function ThreeHeroScene() {
 
     window.addEventListener("resize", onResize, { passive: true });
 
+    // Off-screen canvas pause via IntersectionObserver
+    let isVisible = true;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        isVisible = entry.isIntersecting;
+      },
+      { threshold: 0.05 }
+    );
+    observer.observe(canvas);
+
     // Animation Loop with Smooth Damping
     let animationFrameId: number;
-    let clock = new THREE.Clock();
+    const clock = new THREE.Clock();
 
     const animate = () => {
       animationFrameId = requestAnimationFrame(animate);
+
+      // Pause rendering cycles when hero is scrolled out of viewport
+      if (!isVisible) return;
 
       const elapsedTime = clock.getElapsedTime();
 
@@ -203,6 +225,7 @@ export default function ThreeHeroScene() {
     // Cleanup on Unmount
     return () => {
       cancelAnimationFrame(animationFrameId);
+      observer.disconnect();
       window.removeEventListener("mousemove", onMouseMove);
       window.removeEventListener("resize", onResize);
 

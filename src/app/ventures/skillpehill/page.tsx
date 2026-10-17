@@ -5,9 +5,18 @@ import { GraduationCap, ArrowUpRight, CheckCircle2, BookOpen } from "lucide-reac
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "SkillPeHill Venture Profile — Regional Skills & Academic Infrastructure",
+  title: "SkillPeHill Case Study — Regional Skills & Workforce Infrastructure",
   description:
-    "Venture profile of SkillPeHill: vocational enablement, academic curriculum frameworks, and skill verification infrastructure led by Sushil Kumar.",
+    "Venture profile and research framework of SkillPeHill: vocational enablement, academic curriculum frameworks, and skill verification infrastructure led by Sushil Kumar.",
+  alternates: {
+    canonical: "/ventures/skillpehill",
+  },
+  openGraph: {
+    title: "SkillPeHill Case Study — Regional Skills & Workforce Infrastructure",
+    description:
+      "Objective competency assessment framework and digital skill verification for regional workforce readiness.",
+    url: "/ventures/skillpehill",
+  },
 };
 
 export default function SkillPeHillPage() {

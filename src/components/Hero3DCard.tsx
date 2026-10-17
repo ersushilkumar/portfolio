@@ -3,7 +3,7 @@
 import React, { useRef, useState } from "react";
 import Image from "next/image";
 import { siteConfig } from "@/data/siteConfig";
-import { ShieldCheck, Sparkles, Building2, TrendingUp } from "lucide-react";
+import { ShieldCheck, Building2, TrendingUp } from "lucide-react";
 
 export default function Hero3DCard() {
   const cardRef = useRef<HTMLDivElement>(null);
@@ -14,6 +14,9 @@ export default function Hero3DCard() {
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     if (!cardRef.current) return;
+    if (typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      return;
+    }
     const rect = cardRef.current.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
@@ -117,9 +120,9 @@ export default function Hero3DCard() {
             style={{ transform: "translateZ(40px)" }}
           >
             <div>
-              <h3 className="text-xl font-bold text-white tracking-tight flex items-center gap-2">
+              <p className="text-xl font-bold text-white tracking-tight flex items-center gap-2">
                 {siteConfig.name}
-              </h3>
+              </p>
               <p className="text-xs text-sky-300 font-medium tracking-wide">
                 Hyperlocal Commerce • FinTech Risk • Empirical Research
               </p>

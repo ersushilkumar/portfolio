@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { ventures } from "@/data/ventures";
 import VentureCard3D from "@/components/VentureCard3D";
 import { Building2, ShieldCheck, ArrowUpRight } from "lucide-react";
@@ -10,6 +9,15 @@ export const metadata: Metadata = {
   title: "Ventures & Initiatives — DealChowk, Siddhi Technofab, SkillPeHill",
   description:
     "Explore the entrepreneurial initiatives led by Sushil Kumar, including DealChowk hyperlocal marketplace, Siddhi Technofab industrial fabrication, and SkillPeHill skill infrastructure.",
+  alternates: {
+    canonical: "/ventures",
+  },
+  openGraph: {
+    title: "Ventures & Commercial Initiatives — Sushil Kumar",
+    description:
+      "Commercial platforms and ventures engineered by Sushil Kumar: DealChowk, Siddhi Technofab, and SkillPeHill.",
+    url: "/ventures",
+  },
 };
 
 export default function VenturesPage() {

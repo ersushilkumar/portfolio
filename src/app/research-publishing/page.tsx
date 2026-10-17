@@ -7,20 +7,25 @@ import {
   ScrollText,
   ShieldCheck,
   ArrowUpRight,
-  Sparkles,
   CheckCircle,
-  HelpCircle,
   Scale,
-  GraduationCap,
-  Layers,
   AlertTriangle,
 } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Academic Research & Publishing Platform — Sushil Kumar",
+  title: "Academic Research & Publishing Platform",
   description:
     "Open academic repository, multidisciplinary journal tracks, and manuscript editorial services for students, research scholars, faculty, and independent authors.",
+  alternates: {
+    canonical: "/research-publishing",
+  },
+  openGraph: {
+    title: "Academic Research & Publishing Platform — Sushil Kumar",
+    description:
+      "Open-access scholarly repository, double-blind journal tracks, and manuscript editorial services directed by Sushil Kumar.",
+    url: "/research-publishing",
+  },
 };
 
 export default function ResearchPublishingPage() {

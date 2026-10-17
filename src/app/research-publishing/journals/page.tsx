@@ -5,17 +5,11 @@ import Link from "next/link";
 import { publishingConfig, JournalTrack } from "@/data/publishingConfig";
 import {
   BookOpen,
-  Scale,
-  ShieldCheck,
   CheckCircle2,
   ArrowUpRight,
   Send,
   AlertTriangle,
   Lock,
-  UserCheck,
-  RotateCcw,
-  Clock,
-  Layers,
 } from "lucide-react";
 
 export default function JournalsPage() {

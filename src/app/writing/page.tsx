@@ -5,9 +5,18 @@ import { FileText, ArrowUpRight, Clock, Calendar } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Writing & Field Essays — Sushil Kumar",
+  title: "Writing, Fieldwork & Technical Essays",
   description:
     "Reflective essays and technical analyses on hyperlocal commerce, fintech fraud risk governance, and performant 3D web systems.",
+  alternates: {
+    canonical: "/writing",
+  },
+  openGraph: {
+    title: "Writing, Fieldwork & Technical Essays — Sushil Kumar",
+    description:
+      "Essays and field analyses on Indian retail commerce, fintech risk governance, and web performance by Sushil Kumar.",
+    url: "/writing",
+  },
 };
 
 export default function WritingIndexPage() {

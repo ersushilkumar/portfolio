@@ -5,22 +5,14 @@ import Link from "next/link";
 import { publishingConfig } from "@/data/publishingConfig";
 import {
   ScrollText,
-  Search,
-  Filter,
   UploadCloud,
   CheckCircle2,
-  ShieldCheck,
   Lock,
   ArrowUpRight,
   AlertCircle,
-  FileText,
-  BookOpen,
 } from "lucide-react";
 
 export default function RepositoryPage() {
-  const [searchTerm, setSearchTerm] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState("all");
-
   // Deposit Form State
   const [title, setTitle] = useState("");
   const [authors, setAuthors] = useState("");

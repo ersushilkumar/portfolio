@@ -6,10 +6,7 @@ import { ventures } from "@/data/ventures";
 import {
   Building2,
   ExternalLink,
-  ShieldCheck,
   CheckCircle2,
-  ArrowUpRight,
-  Layers,
   Users,
   MapPin,
   TrendingUp,
@@ -19,9 +16,26 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "DealChowk Case Study — Hyperlocal Commerce & Merchant Discovery",
+  title: "DealChowk Case Study — Hyperlocal Commerce Architecture",
   description:
     "In-depth venture case study of DealChowk: architecture, merchant onboarding, hyperlocal discovery algorithms, and go-to-market strategy by Sushil Kumar.",
+  alternates: {
+    canonical: "/ventures/dealchowk",
+  },
+  openGraph: {
+    title: "DealChowk Case Study — Hyperlocal Commerce Architecture",
+    description:
+      "Cross-platform Flutter & TypeScript architecture, proximity discovery, and merchant onboarding for neighborhood retail.",
+    url: "/ventures/dealchowk",
+    images: [
+      {
+        url: "/images/dealchowk_field_onboarding.jpg",
+        width: 1200,
+        height: 750,
+        alt: "Sushil Kumar with local merchant at DealChowk storefront onboarding stall",
+      },
+    ],
+  },
 };
 
 export default function DealChowkPage() {

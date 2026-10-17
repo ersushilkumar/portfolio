@@ -1,13 +1,22 @@
 import React from "react";
 import Link from "next/link";
 import { ventures } from "@/data/ventures";
-import { Factory, ShieldCheck, ArrowUpRight, CheckCircle2 } from "lucide-react";
+import { Factory, ArrowUpRight, CheckCircle2 } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Siddhi Technofab Venture Profile — Industrial Engineering & Fabrication",
+  title: "Siddhi Technofab Profile — Industrial Engineering & Fabrication",
   description:
     "Venture profile of Siddhi Technofab: industrial fabrication, manufacturing operations, and physical engineering initiatives by Sushil Kumar.",
+  alternates: {
+    canonical: "/ventures/siddhi-technofab",
+  },
+  openGraph: {
+    title: "Siddhi Technofab Profile — Industrial Engineering & Fabrication",
+    description:
+      "Industrial fabrication, structural engineering, and manufacturing initiatives.",
+    url: "/ventures/siddhi-technofab",
+  },
 };
 
 export default function SiddhiTechnofabPage() {

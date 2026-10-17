@@ -3,20 +3,26 @@ import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/data/siteConfig";
 import {
-  ShieldCheck,
-  Building2,
   Compass,
   CheckCircle2,
   ArrowUpRight,
-  Sparkles,
   BookOpen,
 } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Sushil Kumar — Background, Principles & Journey",
+  title: "About — Background, Principles & Journey",
   description:
-    "Learn about Sushil Kumar, founder of DealChowk, builder of tech platforms, and researcher in management, consumer behavior, and fraud risk governance.",
+    "Learn about Sushil Kumar: founder of DealChowk, builder of tech platforms, and researcher in management, consumer behavior, and fraud risk governance.",
+  alternates: {
+    canonical: "/about",
+  },
+  openGraph: {
+    title: "About Sushil Kumar — Background, Principles & Journey",
+    description:
+      "Background, engineering principles, and management research journey of Sushil Kumar.",
+    url: "/about",
+  },
 };
 
 export default function AboutPage() {

@@ -1,14 +1,12 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
-import ThreeHeroScene from "@/components/ThreeHeroScene";
 import Hero3DCard from "@/components/Hero3DCard";
 import VentureCard3D from "@/components/VentureCard3D";
+import ThreeHeroSceneClient from "@/components/ThreeHeroSceneClient";
 import { siteConfig } from "@/data/siteConfig";
 import { ventures } from "@/data/ventures";
 import { researchPapers } from "@/data/research";
 import { articles } from "@/data/articles";
-import { publishingConfig } from "@/data/publishingConfig";
 import {
   ArrowUpRight,
   ShieldCheck,
@@ -16,8 +14,6 @@ import {
   BookOpen,
   FileText,
   TrendingUp,
-  Sparkles,
-  Layers,
   CheckCircle,
   ExternalLink,
   Mail,
@@ -36,7 +32,7 @@ export default function HomePage() {
         aria-label="Introduction and Founder Overview"
       >
         {/* 3D WebGL Background Scene */}
-        <ThreeHeroScene />
+        <ThreeHeroSceneClient />
 
         <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center relative z-10">
           {/* Left Column: Semantic Headline & Identity */}

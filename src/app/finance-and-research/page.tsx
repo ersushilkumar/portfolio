@@ -1,23 +1,28 @@
 import React from "react";
 import Link from "next/link";
-import { researchPapers, researchPortfolioNote } from "@/data/research";
+import { researchPapers } from "@/data/research";
 import {
   TrendingUp,
-  BookOpen,
-  Scale,
-  ShieldCheck,
   CheckCircle2,
   ArrowUpRight,
   Quote,
-  FileText,
   Award,
 } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Finance, Risk Governance & Management Research — Sushil Kumar",
+  title: "Finance, Risk Governance & Management Research",
   description:
     "Empirical working papers and academic inquiries into digital marketplace fraud mitigation, consumer behavior heuristics, and hyperlocal retail network dynamics.",
+  alternates: {
+    canonical: "/finance-and-research",
+  },
+  openGraph: {
+    title: "Finance, Risk Governance & Management Research — Sushil Kumar",
+    description:
+      "Empirical studies in marketplace fraud risk, consumer heuristics, and retail network dynamics by Sushil Kumar.",
+    url: "/finance-and-research",
+  },
 };
 
 export default function FinanceAndResearchPage() {

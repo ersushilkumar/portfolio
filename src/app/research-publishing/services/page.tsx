@@ -2,15 +2,11 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
-import { publishingConfig, EditorialService } from "@/data/publishingConfig";
+import { publishingConfig } from "@/data/publishingConfig";
 import {
   FileCheck2,
   CheckCircle2,
-  Clock,
-  FileText,
-  Sparkles,
   ArrowUpRight,
-  ShieldCheck,
   Send,
   Building,
 } from "lucide-react";

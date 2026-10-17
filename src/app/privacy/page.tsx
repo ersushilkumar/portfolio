@@ -1,13 +1,22 @@
 import React from "react";
 import Link from "next/link";
 import { siteConfig } from "@/data/siteConfig";
-import { ShieldCheck, Lock, ArrowLeft, CheckCircle2 } from "lucide-react";
+import { ShieldCheck, Lock, ArrowLeft } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Notice & Terms — Sushil Kumar Portfolio",
+  title: "Privacy Notice & Architectural Disclaimers",
   description:
     "Privacy practices, data protection principles, and architectural boundaries for the personal portfolio of Sushil Kumar.",
+  alternates: {
+    canonical: "/privacy",
+  },
+  openGraph: {
+    title: "Privacy Notice & Architectural Disclaimers — Sushil Kumar",
+    description:
+      "Privacy policies, data boundaries, and information security disclosures for Sushil Kumar's personal portfolio.",
+    url: "/privacy",
+  },
 };
 
 export default function PrivacyPage() {
@@ -82,8 +91,9 @@ export default function PrivacyPage() {
           <p>
             For questions regarding this privacy notice or personal data handling, you may communicate directly via LinkedIn or email:
           </p>
-          <div className="mt-3 font-mono text-xs text-sky-400">
-            LinkedIn: linkedin.com/in/{siteConfig.social.linkedin.handle}
+          <div className="mt-3 flex flex-col gap-1 font-mono text-xs">
+            <span className="text-emerald-400">Email: {siteConfig.email}</span>
+            <span className="text-sky-400">LinkedIn: linkedin.com/in/{siteConfig.social.linkedin.handle}</span>
           </div>
         </section>
       </div>

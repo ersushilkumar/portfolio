@@ -1,25 +1,28 @@
 import React from "react";
-import Link from "next/link";
 import ResumePrintButton from "@/components/ResumePrintButton";
 import { siteConfig } from "@/data/siteConfig";
 import { resumeData } from "@/data/resume";
 import {
   FileText,
-  Building2,
   GraduationCap,
   Briefcase,
-  CheckCircle2,
   ExternalLink,
-  ShieldCheck,
-  Printer,
-  Sparkles,
 } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Professional Resume — Sushil Kumar",
+  title: "Professional Resume & Experience",
   description:
     "Curated curriculum vitae of Sushil Kumar: venture building, product architecture, education, skills, and empirical research.",
+  alternates: {
+    canonical: "/resume",
+  },
+  openGraph: {
+    title: "Professional Resume — Sushil Kumar",
+    description:
+      "Curated curriculum vitae of Sushil Kumar: DealChowk founder, mobile/platform architecture, education, and research experience.",
+    url: "/resume",
+  },
 };
 
 export default function ResumePage() {

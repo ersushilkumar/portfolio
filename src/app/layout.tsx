@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: siteConfig.siteUrl,
+    canonical: "/",
   },
   icons: {
     icon: [
