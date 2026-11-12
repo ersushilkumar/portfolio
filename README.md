@@ -18,7 +18,7 @@ A complete, production-grade personal portfolio and academic publishing platform
 - **Verified GitHub:** [github.com/ersushilkumar/portfolio](https://github.com/ersushilkumar/portfolio) (Handle: `ersushilkumar`)
 
 ### Ventures:
-1. **DealChowk** ([dealchowk.in](https://dealchowk.in/) | [app.dealchowk.in](https://app.dealchowk.in/)): Hyperlocal commerce discovery platform connecting local high-street merchants with nearby consumers. Official channels: YouTube (`@dealchowk`), Instagram (`@dealchowk`), Facebook (`DealChowk`).
+1. **DealChowk** ([dealchowk.in](https://dealchowk.in/): Hyperlocal commerce discovery platform connecting local high-street merchants with nearby consumers. Official channels: YouTube (`@dealchowk`), Instagram (`@dealchowk`), Facebook (`DealChowk`).
 2. **Siddhi Technofab:** Industrial fabrication, structural metal assemblies, and physical engineering operations.
 3. **SkillPeHill:** Regional vocational skills assessment and verified academic credentialing framework.
 
